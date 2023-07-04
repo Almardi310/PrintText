@@ -1,0 +1,34 @@
+<!-- This is a code to print the text that is being entered in the input field -->
+<!-- By HTML & CSS & Javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<!-- to make display flex , and center items  -->
+<body class="d-flex align-items-center py-4">
+
+    <div class="myform w-100 m-auto">
+        <div>
+            <!-- from  Bootstrap form-->
+            <div class="mb-3">
+              <label for="myText" class="form-label">The text</label>
+              <input type="text" class="form-control" id="myText">
+              <div id="emailHelp" class="form-text">Please enter some text.</div>
+            </div>
+            <button onclick="myFunction()" class="btn btn-primary w-100">Print</button>
+        </div>
+        <!-- A place to print the text -->
+        <p id="enteredText" class="my-4"></p>
+    </div>
+
+    <!-- Bootstrap scripts -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Javascript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
