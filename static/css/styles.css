@@ -6,3 +6,10 @@ body {
 .myform {
     max-width: 330px;
 }
+.editText{
+    width: 75%;
+}
+.editText input{
+    border: none;
+    outline: none;
+}
