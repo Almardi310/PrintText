@@ -20,7 +20,7 @@ function addTextToEndOfArray() {
 
 
 function createTableTitle(){
-    if(arrayOfTexts.length === 1){
+    if(arrayOfTexts.length === 1 && myTable.rows.length == 0){//check is this first time and not created previously
         titleRow = myTable.insertRow(0);
         var cell1 = titleRow.insertCell(0);
         var cell2 = titleRow.insertCell(1);
@@ -74,7 +74,7 @@ function editText(thisItem){
     var val=thisItem.innerHTML;
     var input=document.createElement("input");
     input.value=val;
-    input.onblur=function(){
+    input.onblur=function(){//when leave
         var val=this.value;
         this.parentNode.innerHTML=val;
     }
