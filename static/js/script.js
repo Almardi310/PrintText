@@ -16,3 +16,11 @@ function myFunction() {
     // make the "myText" input empty
     document.getElementById("myText").value = '';
 }
+
+
+document.getElementById("myText").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("myButton").click();
+    }
+});
