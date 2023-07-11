@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-    <!-- This is a code to print the text that is being entered in the input field -->
-    <!-- By HTML & CSS & Javascript -->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9,18 +7,22 @@
         <link rel="stylesheet" href="static/css/bootstrap.css">
         <link rel="stylesheet" href="static/css/styles.css">
     </head>
-    <!-- to make display flex , and center items  -->
     <body class="d-flex align-items-center py-4">
+
+
+
         <div class="myform w-100 m-auto">
             <div>
-                <!-- from  Bootstrap form -->
                 <div class="mb-3">
                     <label for="myText" class="form-label">The text</label>
                     <input type="text" class="form-control" id="myInput">
                     <div id="emailHelp" class="form-text">Please enter some text.</div>
                 </div>
-                <button id="myButton" onclick="printText()" class="btn btn-primary w-100">Print</button>
+                <button id="myButton" onclick="insertNewText()" class="btn btn-primary w-100">Print</button>
             </div>
+
+
+            
             <table id="myTable" class="mt-5 table table-responsive-md table-striped text-center">
                 <tbody>
                     <!-- The new row well print here -->
@@ -28,9 +30,9 @@
             </table>
         </div>
         
-        <!-- Bootstrap scripts -->
+
+
         <script src="static/js/bootstrap.js"></script>
-        <!-- Javascript file -->
         <script src="static/js/script.js"></script>
     </body>
 </html>
